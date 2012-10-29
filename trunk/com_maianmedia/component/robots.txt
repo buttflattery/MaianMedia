@@ -1,0 +1,12 @@
+User-agent: *
+Disallow: /ajax/
+Disallow: /classes/
+Disallow: /controllers/
+Disallow: /inc/
+Disallow: /media/
+Disallow: /lang/
+Disallow: /log/
+Disallow: /media/
+Disallow: /players/
+Disallow: /views/
+Disallow: /templates/

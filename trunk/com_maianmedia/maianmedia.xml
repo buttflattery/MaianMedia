@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install type="component" version="1.5.0" method="upgrade">
+	<name>MaianMedia</name>
+	<author>Alao And David Bennet</author>
+	<creationDate>06-01-2009</creationDate>
+	<copyright>This component in released under the GNU/GPL</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<authorEmail>Alao@aretimes.com</authorEmail>
+	<authorUrl>www.aretimes.com</authorUrl>
+	<version>1.5.9</version>
+	<description>Simple Mp3 Music Store</description>
+	<installfile>install.maianmedia.php</installfile>
+	<uninstallfile>uninstall.maianmedia.php</uninstallfile>
+	<install>
+		<sql>
+			<file driver="mysql" charset="utf8">install.mysql.sql</file>
+		</sql>
+	</install>
+	<uninstall>
+		<sql>
+			<file driver="mysql" charset="utf8">uninstall.mysql.sql</file>
+		</sql>
+	</uninstall>
+	<files folder="component">
+		<filename>maianmedia.html.php</filename>
+		<filename>maianmedia.php</filename>
+		<filename>metadata.xml</filename>
+		<filename>robots.txt</filename>
+		<folder>ajax</folder>
+		<folder>classes</folder>
+		<folder>controllers</folder>
+		<folder>inc</folder>
+		<folder>lang</folder>
+		<folder>log</folder>
+		<folder>media</folder>
+		<folder>players</folder>
+		<folder>securimage</folder>
+		<folder>templates</folder>
+		<folder>views</folder>
+	</files>
+	<administration>
+		<menu img="../components/com_maianmedia/media/thumb/record.png">MAIAN MEDIA</menu>
+		<menu link="option=com_maianmedia">maianmedia</menu>
+		<submenu>
+			<menu img="../components/com_maianmedia/media/thumb/about.png"
+				alt="About" link="option=com_maianmedia&amp;task=about" view="About">ABOUT</menu>
+			<menu img="../components/com_maianmedia/media/thumb/settings.png"
+				alt="Settings"
+				link="option=com_maianmedia&amp;controller=settings&amp;view=settings">SETTINGS</menu>
+			<menu img="../components/com_maianmedia/media/thumb/cat.png"
+				link="option=com_maianmedia&amp;controller=category&amp;view=category">CATEGORIES</menu>
+			<menu img="../components/com_maianmedia/media/thumb/albums.png"
+				alt="Manage Albums" link="option=com_maianmedia&amp;controller=albums&amp;view=albums">MANAGE ALBUMS</menu>
+			<menu img="../components/com_maianmedia/media/thumb/add.png"
+				alt="Add New Tracks"
+				link="option=com_maianmedia&amp;controller=tracks&amp;view=track&amp;task=add">ADD NEW TRACKS</menu>
+			<menu img="../components/com_maianmedia/media/thumb/track.png"
+				alt="Manage Tracks"
+				link="option=com_maianmedia&amp;controller=tracks&amp;view=tracks&amp;task=manage">MANAGE PHYSICAL ITEMS</menu>
+			<menu img="../components/com_maianmedia/media/thumb/sales.png"
+				alt="Sales" link="option=com_maianmedia&amp;controller=sales&amp;view=sales">SALES</menu>
+			<menu img="../components/com_maianmedia/media/thumb/search_sales.png"
+				alt="Search Sales" link="option=com_maianmedia&amp;controller=sales&amp;view=search">SEARCH SALES</menu>
+			<menu img="../components/com_maianmedia/media/thumb/stats.png"
+				alt="Statistics" link="option=com_maianmedia&amp;controller=stats&amp;view=stats">STATISTICS</menu>
+			<menu img="../components/com_maianmedia/media/thumb/tools.png"
+				alt="Tools" link="option=com_maianmedia&amp;task=tools">TOOLS</menu>
+		</submenu>
+		<files folder="admin">
+			<filename>index.html</filename>
+			<filename>install.mysql.sql</filename>
+			<filename>maianmedia.php</filename>
+			<filename>stylesheet.css</filename>
+			<filename>uninstall.mysql.sql</filename>
+			<filename>toolbar.maianmedia.php</filename>
+			<folder>controllers</folder>
+			<folder>common</folder>
+			<folder>utilities</folder>
+			<folder>images</folder>
+			<folder>js</folder>
+			<folder>models</folder>
+			<folder>tables</folder>
+			<folder>views</folder>
+		</files>
+		<languages folder="languages/admin">
+			<language tag="en-GB">en-GB.com_maianmedia.sys.ini</language>
+		</languages>
+	</administration>
+</install>

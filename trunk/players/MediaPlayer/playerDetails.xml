@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config>
+	<name>Media Player</name>
+	<creationDate>29 February 2012</creationDate>
+	<author>Arelowo Alao</author>
+	<authorUrl>http://www.longtailvideo.com/players/jw-flv-player/</authorUrl>
+	<copyright>Are Times</copyright>
+	<license>GNU/GPL</license>
+	<version>1.0.0</version>
+	<description>This is an older version of the JWPlayer
+	</description>
+	<params>
+		<param name="width" type="text" default="200" label="Width" />
+		<param name="height" type="text" default="20" label="Height" />
+		<param name="style" type="textarea" default="a:active, a:focus {outline: 0};"
+			label="Style" />
+	</params>
+</config>

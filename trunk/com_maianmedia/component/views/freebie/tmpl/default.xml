@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+	<layout title="Free Downloads" option="Free Downloads">
+		<message>
+			<![CDATA[Displays all tracks who's price is set to 0.00 or is set explicity]]>
+		</message>
+	</layout>
+	<fields name="params">
+		<fieldset name="basic" label="Settings">
+			<field name="display_num" type="list" default="20" label="Tracks Per Page"
+				description="Number of Tracks to display on the page.">
+				<option value="5">5</option>
+				<option value="10">10</option>
+				<option value="15">15</option>
+				<option value="20">20</option>
+				<option value="25">25</option>
+				<option value="30">30</option>
+				<option value="50">50</option>
+				<option value="100">100</option>
+				<option value="0">All</option>
+			</field>
+			<field name="orderBy" type="list" default="id" label="Order Tracks By"
+				description="Order in which to display albums.">
+				<option value="id">None</option>
+				<option value="track-asc">Order By Track Name A-Z</option>
+				<option value="track-desc">Order By Track Name Z-A</option>
+				<option value="date-asc">Order By Date Added - ASC</option>
+				<option value="date-dec">Order By Date Added - DESC</option>
+			</field>
+			<field name="email" type="radio" default="1"
+				label="Require Email Address Before Download?"
+				description="If checked downloads will only be administred when the users supplies an email address">
+				<option value="0">No</option>
+				<option value="1">Yes</option>
+			</field>
+			<field name="accept_users" type="radio" default="1"
+				label="Allow Users To Download?"
+				description="If selected registered users can download tracks without supplying an email address.">
+				<option value="0">No</option>
+				<option value="1">Yes</option>
+			</field>
+			<field name="color" type="text" default="#F5F5F5" label="Alternate Row Color"
+				description="Will dispalay alternate row color. If you don't want a color enter the word 'none'" />
+			<field name="system" type="list" default="acajoom"
+				label="Select Newsletter System"
+				description="Which system to populate if emails are required for downloads.">
+				<option value="none">None</option>
+				<option value="acajoom">Acajoom</option>
+				<option value="ccnews">ccNewsletter</option>
+			</field>
+			<field name="newslist" type="text" default="0" label="List Id"
+				description="If the newsletter systems requires a list enter the list id here." />
+		</fieldset>
+	</fields>
+</metadata>

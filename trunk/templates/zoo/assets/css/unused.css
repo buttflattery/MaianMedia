@@ -1,0 +1,55 @@
+/* Unused MM styling */
+
+/* TERRITORIES
+--------------------------------------------------------------------------*/
+#territories {
+	padding: 10px 0 0;
+	position: absolute;
+}
+
+#territories SPAN {
+	float: left;
+	text-transform: uppercase;
+	color: #FFFFFF;
+	margin: 2px 10px 0 0;
+}
+
+.globalFlag {
+	margin-top: -3px;
+}
+
+#territoryList SPAN {
+	font-size: 13px;
+}
+
+#territoryList UL {
+	display: inline;
+	list-style: none;
+	float: left;
+	margin: 0;
+	padding: 0;
+}
+
+#territoryList UL LI {
+	float: left;
+	padding: 0;
+	height: 10px;
+	list-style: none;
+}
+
+#territoryList UL A {
+	margin-left: 15px;
+	padding: 4px;
+	height: 0;
+}
+
+#territoryList UL A IMG {
+	display: block;
+	line-height: 1;
+}
+
+#territoryList UL A:hover IMG {
+	display: block;
+	line-height: 1;
+	border: 1px solid #A39D9D;
+}

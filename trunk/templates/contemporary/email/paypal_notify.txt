@@ -1,0 +1,31 @@
+** THIS IS A SYSTEM GENERATED RESPONSE - DO NOT REPLY **
+========================================================
+
+Hi,
+
+Someone has purchased music tracks or albums from your music store:
+
+Invoice No: {INVOICE}
+Buyer: {NAME}
+Transaction ID Number: {TRANS_ID}
+Order Total: {TOTAL}
+
+ALBUMS PURCHASED:
+=================
+
+{ALBUMS}
+
+
+TRACKS PURCHASED:
+=================
+
+{TRACKS}
+
+To view more details about this, log in to your admin area:
+{WEBSITE_URL}/administrator/
+
+Kind regards,
+
+------------------------------------
+{WEBSITE_NAME}
+{WEBSITE_URL}

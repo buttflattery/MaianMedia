@@ -1,0 +1,23 @@
+** THIS IS A SYSTEM GENERATED RESPONSE - DO NOT REPLY **
+========================================================
+
+Hi {NAME},
+
+Thank you for purchasing some music tracks from {WEBSITE_NAME}.
+
+Invoice No: {INVOICE}
+Order Total: {TOTAL}
+
+To download your purchases, please click the following url or copy and paste into your browser:
+{DOWNLOAD_LINK}
+
+If you need to contact me, please quote the above invoice number:
+{WEBSITE_EMAIL}
+
+I hope you enjoy my music,
+
+Kind regards,
+
+------------------------------------
+{WEBSITE_NAME}
+{WEBSITE_URL}

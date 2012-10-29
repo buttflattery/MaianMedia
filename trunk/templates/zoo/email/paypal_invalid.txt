@@ -1,0 +1,21 @@
+** THIS IS A SYSTEM GENERATED RESPONSE - DO NOT REPLY **
+========================================================
+
+Hi,
+
+A transaction has occured from your music store that should be investigated.
+
+The returned response from Paypal is one of the following:
+
+FAILED
+DENIED
+INVALID
+NOT KNOWN
+
+For more information check your log file.
+
+Kind regards,
+
+------------------------------------
+{WEBSITE_NAME}
+{WEBSITE_URL}

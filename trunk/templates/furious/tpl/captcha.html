@@ -1,0 +1,15 @@
+<a href="#"
+	onclick="document.getElementById('image').src = '{url}index.php?option=com_maianmedia&format=raw&task=create_captcha&sid=' + Math.random(); return false;">
+	<img style="border: 1px solid #d1d5cd; padding: 2px"
+	src="{url}index.php?option=com_maianmedia&format=raw&task=create_captcha&sid={sid}"
+	id="image" alt="Code" title="Code" /> </a>
+<br />
+({refresh_captcha})
+<br />
+<br />
+<label class="lclass">{code}:<br />
+</label>
+<input name="code" class="codebox" type="text" size="40" />
+{code_error}
+<br />
+<br />

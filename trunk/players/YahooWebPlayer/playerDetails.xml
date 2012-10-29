@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config>
+	<name>Yahoo Web Player</name>
+	<creationDate>06 March 2012</creationDate>
+	<author>Marc Wolf</author>
+	<authorUrl>http://webplayer.yahoo.com/</authorUrl>
+	<copyright>Yahoo</copyright>
+	<license>GNU/GPL</license>
+	<version>1.0.0</version>
+	<description>Bring your pages to life by adding relevant rich media
+		using our smart, sleek and easy-to-install player.</description>
+	<params>
+		<param name="width" type="text" default="200" label="Width" />
+	</params>
+</config>

@@ -1,0 +1,88 @@
+/*-------------------------------------------------
+  MAIAN MUSIC v1.0
+  Written by David Ian Bennett
+  E-Mail: support@maianscriptworld.co.uk
+  Website: www.maianscriptworld.co.uk
+  This File: RSS Feed styling
+             Note that some browsers have default
+             styling and will overwrite this CSS
+ --------------------------------------------------*/
+rss {
+	display: block;
+	font-family: verdana, arial;
+	background: #FFFFFF;
+}
+
+channel title {
+	display: block;
+	margin: 5px 5px 10px 5px;
+	padding: 5px;
+	color: #FFFFFF;
+	font-weight: bold;
+	border: 1px solid #F2F2F2;
+	background-color: #FFFFFF;
+}
+
+channel link {
+	display: none;
+}
+
+channel description {
+	color: black;
+	padding: 3px;
+	margin: 5px;
+	font-size: small;
+	border: 1px solid #B6B8BB;
+	background-color: #FAFAFA;
+}
+
+item link {
+	display: block;
+	margin: 5px;
+	padding: 2px;
+	font-size: 70%;
+	color: #000000;
+	border: 1px solid #B6B8BB;
+	background-color: #FAFAFA;
+}
+
+item title {
+	display: block;
+	margin: 5px;
+	padding: 5px;
+	border: 1px solid #FAFAFA;
+	font-weight: bold;
+	color: #000000;
+	background-color: #FFFFFF;
+}
+
+item {
+	display: block;
+	padding: 2px 30px 2px 30px;
+}
+
+item description {
+	color: #000000;
+	padding: 3px;
+	margin: 5px;
+	font-size: small;
+	font-weight: bold;
+	border: 1px solid #FAFAFA;
+	background-color: #FFFFFF;
+}
+
+language,lastBuildDate,ttl,guid,category,generator,pubDate {
+	display: none;
+}
+
+channel:before {
+	background-color: #FFFFFF;
+	padding: 5px;
+	font-size: 13px;
+	font-weight: bold;
+	letter-spacing: 0.05em;
+	color: #000000;
+	text-align: center;
+	content:
+		"This is an RSS 2.0 file intended to be viewed in a newsreader or syndicated to another site."
+}

@@ -1,0 +1,16 @@
+The following message has been submitted via the mp3 download store contact form:
+---------------------------------------------------------------------------------
+
+From: {NAME}
+E-Mail: {EMAIL}
+Comments:
+
+{COMMENTS}
+
+To respond to this message, click 'Reply' in your e-mail program.
+
+------------------------------------
+{WEBSITE_NAME}
+{WEBSITE_URL}
+
+Visitors IP logged as: {IP}

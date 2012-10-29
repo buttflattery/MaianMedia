@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config>
+	<name>Contemporary</name>
+	<author>Alao</author>
+	<authorUrl>http://www.aretimes.com</authorUrl>
+	<copyright>Are Times</copyright>
+	<license>GNU/GPL</license>
+	<version>1.0.0</version>
+	<description>New look for maian media</description>
+	<params>
+		<param name="display_num" type="text" default="6" label="Albums Per Page"
+			description="Number of Albums to display on the page." />
+		<param name="orderBy" type="list" default="id" label="Order Tracks By"
+			description="Order in which to display albums.">
+			<option value="id">None</option>
+			<option value="name-asc">Order By Album Name A-Z</option>
+			<option value="name-desc">Order By Album Name Z-A</option>
+			<option value="artist-asc">Order By Artist Name A-Z</option>
+			<option value="artist-desc">Order By Artist Name Z-A</option>
+			<option value="date-asc">Order By Date Added - ASC</option>
+			<option value="date-dec">Order By Date Added - DESC</option>
+			<option value="hits">Order Most Hits</option>
+		</param>
+		<param name="country_code" type="radio" default="1"
+			label="Display Country Code" description="Display the country code next to the currency symbol">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+		<param name="alt_row" type="radio" default="1" label="Show Alt Row Colors"
+			description="Display an alternate row color">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+		<param name="more_info" type="radio" default="1" label="Show More Info"
+			description="Display the more info link">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+		<param name="f_display" type="radio" default="1"
+			label="Show Free Downloads Menu"
+			description="Display or Hide the menu. Show Navigation must be checked in settings">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+		<param name="p_display" type="radio" default="1"
+			label="Show Most Popular Menu"
+			description="Display or Hide the menu. Show Navigation must be checked in settings">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+		<param name="m_display" type="radio" default="1" label="Show Music Menu"
+			description="Display or Hide the menu. Show Navigation must be checked in settings">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+		<param name="c_display" type="radio" default="1" label="Show Contact Menu"
+			description="Display or Hide the menu. Show Navigation must be checked in settings">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+		<param name="l_display" type="radio" default="1" label="Show License Menu"
+			description="Display or Hide the menu. Show Navigation must be checked in settings">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+		<param name="styling" type="textarea" default="width:632;"
+			label="Add stying to music container"
+			description="The width of the container contorls how many columns are displayed on the music page." />
+	</params>
+</config>

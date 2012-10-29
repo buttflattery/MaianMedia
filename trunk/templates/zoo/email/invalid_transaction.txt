@@ -1,0 +1,14 @@
+Invalid Paypal Transaction:
+---------------------------
+
+Hello,
+
+Someone may have attempted a fraudulent transaction in your music store. The reason for this e-mail is that the transaction amount did not match the cart amount when the payment was processed.
+
+You should log into your paypal account immediately to investigate this issue and take further action if necessary. Note that no data was logged for this transaction.
+
+------------------------------------
+{WEBSITE_NAME}
+{WEBSITE_URL}
+
+Transaction IP logged as: {IP}
