@@ -1,0 +1,24 @@
+** THIS IS A SYSTEM GENERATED RESPONSE - DO NOT REPLY **
+========================================================
+
+Hi {NAME},
+
+Thank you for placing a music order at {WEBSITE_NAME}. 
+
+Your order status is currently 'Pending'. This is probably due to an eCheque payment.
+
+Invoice No: {INVOICE}
+
+Once your eCheque has cleared, an e-mail will be sent to you with your download link. Details of your clearance date can be found in your Paypal account area:
+
+http://www.paypal.com
+
+If you need to contact me about your order, please quote the above invoice number.
+
+Thank you for your order,
+
+Kind regards,
+
+------------------------------------
+{WEBSITE_NAME}
+{WEBSITE_URL}

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config>
+	<name>General MIDI Player</name>
+	<creationDate>07 May 2012</creationDate>
+	<author>Marc Wolf</author>
+	<authorUrl>http://www.nibiri.com</authorUrl>
+	<copyright>Nibiri</copyright>
+	<license>GNU/GPL</license>
+	<version>1.0.0</version>
+	<description>Maian Media MIDI Player
+	</description>
+	<params>
+		<param name="loop" type="text" default="2" label="Loop" />
+	</params>
+</config>

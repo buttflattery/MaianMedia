@@ -1,0 +1,56 @@
+.maian_wrapper TD {
+	padding: 0 9px 0 3px;
+}
+
+.maian_wrapper .mm_image {
+	border: thin solid;
+}
+
+.maian_wrapper TD IMG {
+	margin: 0 6px 0 0;
+	padding-bottom: 0px;
+}
+
+.maian_wrapper .maian_even-dots IMG {
+	padding: 0 0 0 6px;
+}
+
+.maian_wrapper DIV:hover,.maian_wrapper TD:hover {
+	background: #333333;
+	color: #FFFFFF;
+}
+
+TD.maian_odd-dots {
+	padding: 0;
+}
+
+.maian_wrapper DIV IMG { /*[disabled]float:right;*/
+	
+}
+
+.maian_odd-dots A,.maian_even-dots A {
+	float: none;
+}
+
+.maian_odd-dots .mm_artist,.maian_even-dots .mm_artist {
+	
+}
+
+.maian_even { /*[disabled]margin-bottom:2px;*/
+	
+}
+
+.maian_odd { /*[disabled]margin-bottom:2px;*/
+	/*[disabled]min-width:68px;*/
+	
+}
+
+.maian_even-dots,.maian_odd-dots {
+	background: url(dot.gif) repeat-x bottom left;
+	text-align: left;
+}
+
+.maian_wrapper DIV {
+	float: none;
+	text-align: left;
+}

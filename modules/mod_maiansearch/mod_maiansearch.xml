@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<install type="module" version="1.5.1" method="upgrade">
+	<name>Maian Search</name>
+	<author>Alao</author>
+	<version>1.5.6</version>
+	<description><![CDATA[  
+	Search Module
+	</ol> ]]></description>
+	<files>
+		<filename module="mod_maiansearch">mod_maiansearch.php</filename>
+		<filename>index.html</filename>
+		<filename>tmpl/default.php</filename>
+		<filename>tmpl/index.html</filename>
+	</files>
+</install>

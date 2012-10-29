@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config>
+	<name>MooFlow</name>
+	<creationDate>19 February 2010</creationDate>
+	<author>Arelowo Alao</author>
+	<authorUrl>http://www.aretimes.com</authorUrl>
+	<copyright>Are Times</copyright>
+	<license>GNU/GPL</license>
+	<version>1.0.0</version>
+	<description><![CDATA[
+	This template is an implementation of the image gallery script written by http://www.outcut.de/MooFlow
+	It uses mootools 1.2 and might not be compatiable with templates dependent upon the older version of mootools.
+	The following code can be added to the bottom of your joomla template to remove conflicts.
+	
+	$address = JRequest::getVar('option');
+	if($address == 'com_maianmedia'){
+	   include_once(JPATH_SITE.DS.'components'.DS.'com_maianmedia'.DS.'templates'.DS.'mooflow'.DS.'behavior.php');
+	   MY_Behavior::mootoolsFix();
+	}
+	
+	Ensure you use the PHP enclosing tags when needed.]]>
+	</description>
+	<params>
+		<param name="heightRatio" type="list" default="0.5" label="Height Ratio"
+			description="Controls the size of the album area.">
+			<option value="0.1">0.1</option>
+			<option value="0.2">0.2</option>
+			<option value="0.3">0.3</option>
+			<option value="0.4">0.4</option>
+			<option value="0.5">0.5</option>
+			<option value="0.6">0.6</option>
+			<option value="0.7">0.7</option>
+			<option value="0.8">0.8</option>
+			<option value="0.9">0.9</option>
+			<option value="1">1</option>
+		</param>
+		<param name="moo_width" type="text" default="632" label="MooFlow Width"
+			description="With of the MooFlow container" />
+		<param name="bgColor" type="text" default="#fff" label="Background Color"
+			description="The color that you would like the background to have" />
+		<param name="useSlider" type="radio" default="true" label="Display Slider"
+			description="Display the slider at the bottom of the album area">
+			<option value="1">Yes</option>
+			<option value="0">No</option>
+		</param>
+		<param name="useCaption" type="radio" default="false" label="Display Caption"
+			description="Display the Captions">
+			<option value="1">Yes</option>
+			<option value="0">No</option>
+		</param>
+		<param name="useMouseWheel" type="radio" default="false"
+			label="Activate Mousewheel" description="Use mousewheel to control movement of albums">
+			<option value="1">Yes</option>
+			<option value="0">No</option>
+		</param>
+		<param name="useKeyInput" type="radio" default="true"
+			label="Activate Keybord Input" description="Use keyboard arrows to control movement of albums">
+			<option value="1">Yes</option>
+			<option value="0">No</option>
+		</param>
+		<param name="useViewer" type="radio" default="false" label="Activate Viewer"
+			description="">
+			<option value="1">Yes</option>
+			<option value="0">No</option>
+		</param>
+		<param name="display_num" type="list" default="20"
+			label="Number of Albums to display" description="Number of Albums to display in the Album area.">
+			<option value="5">5</option>
+			<option value="10">10</option>
+			<option value="15">15</option>
+			<option value="20">20</option>
+			<option value="25">25</option>
+			<option value="30">30</option>
+			<option value="50">50</option>
+			<option value="100">100</option>
+			<option value="0">All</option>
+		</param>
+		<param name="orderBy" type="list" default="id" label="Order Tracks By"
+			description="Order in which to display albums.">
+			<option value="id">None</option>
+			<option value="name-asc">Order By Album Name A-Z</option>
+			<option value="name-desc">Order By Album Name Z-A</option>
+			<option value="artist-asc">Order By Artist Name A-Z</option>
+			<option value="artist-desc">Order By Artist Name Z-A</option>
+			<option value="date-asc">Order By Date Added - ASC</option>
+			<option value="date-dec">Order By Date Added - DESC</option>
+			<option value="hits">Order Most Hits</option>
+		</param>
+		<param name="country_code" type="radio" default="1"
+			label="Display Country Code" description="Display the country code next to the currency symbol">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+		<param name="DETECT_COOKIES" type="radio" default="1"
+			label="Detect if cookies are enabled" description="Detect if cookies are enabled">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+		<param name="alt_row" type="radio" default="1" label="Show Alt Row Colors"
+			description="Display an alternate row color">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+		<param name="f_display" type="radio" default="1"
+			label="Show Free Downloads Menu"
+			description="Display or Hide the menu. Show Navigation must be checked in settings">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+		<param name="p_display" type="radio" default="1"
+			label="Show Most Popular Menu"
+			description="Display or Hide the menu. Show Navigation must be checked in settings">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+		<param name="m_display" type="radio" default="1" label="Show Music Menu"
+			description="Display or Hide the menu. Show Navigation must be checked in settings">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+		<param name="c_display" type="radio" default="1" label="Show Contact Menu"
+			description="Display or Hide the menu. Show Navigation must be checked in settings">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+		<param name="l_display" type="radio" default="1" label="Show License Menu"
+			description="Display or Hide the menu. Show Navigation must be checked in settings">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+	</params>
+</config>

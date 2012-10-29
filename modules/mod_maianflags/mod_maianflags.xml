@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<install type="module" version="1.5.0" method="upgrade">
+	<name>Maian Flags</name>
+	<author>Alao</author>
+	<version>1.4.0</version>
+	<description><![CDATA[  
+	Languange Selection  Module
+	</ol> ]]></description>
+	<files>
+		<filename module="mod_maianflags">mod_maianflags.php</filename>
+		<filename>index.html</filename>
+		<filename>tmpl/default.php</filename>
+		<filename>tmpl/index.html</filename>
+	</files>
+</install>

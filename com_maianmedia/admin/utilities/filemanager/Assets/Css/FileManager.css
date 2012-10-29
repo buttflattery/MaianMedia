@@ -1,0 +1,732 @@
+DIV.filemanager-container {
+	display: none;
+}
+
+DIV.filemanager * {
+	outline: 0;
+}
+
+DIV.filemanager A IMG {
+	border: 0;
+}
+
+DIV.filemanager-container,DIV.filemanager,DIV.filemanager BUTTON,DIV.filemanager LABEL,DIV.filemanager H1
+	{
+	width: auto;
+	margin: 0;
+	font: normal 11px verdana, arial, Tahoma, sans-serif;
+	text-transform: none;
+	letter-spacing: 0;
+}
+/*filemanager*/
+DIV.filemanager {
+	background: #F5F5F5;
+	position: absolute;
+	z-index: 1001;
+	width: 75%;
+	height: 75%;
+	/*box-shadow: rgba(0, 0, 0, 0.3) 0 0 40px
+-moz-box-shadow: rgba(0, 0, 0, 0.3) 0 0 40px
+-webkit-box-shadow: rgba(0, 0, 0, 0.3) 0 0 40px;
+-o-box-shadow: rgba(0, 0, 0, 0.3) 0 0 40px*/
+	border-radius: 0 0 8px 8px;
+	-moz-border-radius: 0 0 8px 8px;
+	-webkit-border-radius: 0 0 8px 8px;
+	/*-o-border-radius: 0 0 8px 8px*/
+}
+/*filemanager-header*/
+DIV.filemanager-header {
+	z-index: 3;
+	position: absolute;
+	top: -30px;
+	left: 0px;
+	width: 100%;
+	height: 14px;
+	padding: 8px 0px;
+	background: url(../Images/menu.png) repeat-x;
+	/*box-shadow: rgba(0, 0, 0, 0.3) 0 0 5px
+-moz-box-shadow: rgba(0, 0, 0, 0.3) 0 0 5px
+-webkit-box-shadow: rgba(0, 0, 0, 0.3) 0 0 5px;
+-o-box-shadow: rgba(0, 0, 0, 0.3) 0 0 5px*/
+	border-radius: 8px 8px 0 0;
+	-moz-border-radius: 8px 8px 0 0;
+	-webkit-border-radius: 8px 8px 0 0;
+	/*-o-border-radius: 8px 8px 0 0*/
+	overflow: hidden;
+}
+/*filemanager-menu*/
+DIV.filemanager DIV.filemanager-menu {
+	z-index: 2;
+	position: absolute;
+	height: 30px;
+	left: 35%;
+	width: 65%;
+	bottom: 0;
+	line-height: 30px;
+	border-top: 1px solid #BEBEBE;
+	background: url(../Images/menu.png) repeat-x;
+	/*box-shadow: rgba(0, 0, 0, 0.3) 2px 0 5px
+-moz-box-shadow: rgba(0, 0, 0, 0.3) 1px -2px 5px -2px
+-webkit-box-shadow: rgba(0, 0, 0, 0.3) 0 0 5px;
+-o-box-shadow: rgba(0, 0, 0, 0.3) 0 0 5px*/
+	border-radius: 0 0 8px 0;
+	-moz-border-radius: 0 0 8px;
+	-webkit-border-radius: 0 0 8px;
+	/*-o-border-radius: 0 0 8px 0*/
+}
+
+DIV.filemanager BUTTON {
+	cursor: pointer;
+	height: 22px;
+	line-height: 22px;
+	margin: 4px 5px;
+	padding: 0 2px;
+	color: #333;
+	text-shadow: #eee 1px 1px 1px;
+	clear: none;
+	background: url(../Images/button.png) repeat-x;
+	border: 1px solid #A1AEB9;
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+	/*-o-border-radius: 4px*/
+	border-radius: 4px;
+}
+
+DIV.filemanager-engine-trident4 BUTTON,DIV.filemanager-engine-trident5 BUTTON
+	{
+	padding: 0 0.25em;
+	overflow: visible;
+}
+
+DIV.filemanager-menu BUTTON {
+	float: right;
+}
+
+DIV.filemanager BUTTON:hover,DIV.filemanager BUTTON.hover,DIV.filemanager BUTTON:focus
+	{
+	border: 1px solid #5F676E;
+}
+
+DIV.filemanager BUTTON.disabled,DIV.filemanager BUTTON.disabled:hover,DIV.filemanager BUTTON.disabled:focus
+	{
+	cursor: default;
+	color: #666;
+	text-shadow: none;
+	background: url(../Images/button_disabled.png) repeat-x;
+	border-color: #BABABA;
+}
+
+DIV.filemanager BUTTON.filemanager-open {
+	font-weight: bold;
+}
+
+DIV.filemanager-menu LABEL {
+	cursor: pointer;
+	float: right;
+	width: auto;
+	height: auto;
+	line-height: 30px;
+	font-size: 11px;
+}
+
+DIV.loader {
+	width: 16px;
+	height: 16px;
+	background: url(../Images/loader.gif) no-repeat;
+}
+
+DIV.filemanager-header DIV.loader {
+	position: absolute;
+	top: 7px;
+	right: 30px;
+}
+
+DIV.filemanager-browserheader DIV.loader {
+	position: absolute;
+	top: 4px;
+	left: 5px;
+}
+
+DIV.filemanager-preview DIV.loader {
+	position: relative;
+	left: 50%;
+	right: auto;
+	margin-left: -8px;
+}
+/*filemanager-browserscroll*/
+DIV.filemanager DIV.filemanager-browserscroll {
+	margin: 0;
+	padding: 0;
+	height: 100%;
+	overflow: auto;
+}
+
+DIV.filemanager DIV.filemanager-browserscroll LI.list {
+	height: 21px;
+}
+
+DIV.filemanager DIV.filemanager-browserscroll LI.thumb {
+	height: 54px;
+}
+
+DIV.filemanager UL {
+	margin: 0;
+	padding: 0;
+	position: relative;
+	line-height: 1.8em;
+	zoom: 1;
+}
+
+DIV.filemanager UL LI {
+	background: none;
+	list-style-image: none;
+	list-style-type: none;
+	list-style: none;
+	line-height: 1.8em;
+	margin: 0;
+	padding: 0;
+	white-space: nowrap;
+}
+
+DIV.filemanager DIV.filemanager-browsercontainer {
+	height: 100%;
+	width: 35%;
+	border: 0;
+	border-right: 1px solid #BEBEBE;
+	background: #D7DEE8 url(../Images/filelist.png) repeat-x bottom left;
+	overflow: hidden;
+	/*box-shadow: rgba(0, 0, 0, 0.3) 0 0 5px
+-moz-box-shadow: rgba(0, 0, 0, 0.3) 0 0 5px
+-webkit-box-shadow: rgba(0, 0, 0, 0.3) 0 0 5px;
+-o-box-shadow: rgba(0, 0, 0, 0.3) 0 0 5px*/
+	border-radius: 0 0 0 8px;
+	-moz-border-radius: 0 0 0 8px;
+	-webkit-border-radius: 0 0 0 8px;
+	/*-o-border-radius: 0 0 0 8px*/
+}
+
+DIV.filemanager-browsercontainer DIV.filemanager-browserheader {
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 25px;
+	background: #C3CDD9;
+	border-bottom: 1px solid #BEBEBE;
+	text-align: right;
+}
+
+DIV.filemanager-browsercontainer DIV.filemanager-browserheader A.listType
+	{
+	display: inline-block;
+	float: right;
+	width: 16px;
+	height: 16px;
+	margin: 5px;
+	cursor: pointer;
+}
+
+DIV.filemanager-browsercontainer DIV.filemanager-browserheader A.listType#togggle_side_list
+	{
+	background: url(../Images/application_side_list.png) no-repeat;
+}
+
+DIV.filemanager-browsercontainer DIV.filemanager-browserheader A.listType#togggle_side_boxes
+	{
+	background: url(../Images/application_side_boxes.png) no-repeat;
+}
+
+DIV.filemanager-container SPAN.fi {
+	height: 21px;
+	line-height: 1.8em;
+	padding-left: 5px;
+	color: #000;
+	text-decoration: none;
+	display: block;
+	white-space: nowrap;
+	cursor: pointer;
+}
+
+DIV.filemanager-container SPAN.thumb {
+	height: 48px;
+	padding: 3px 0 3px 3px;
+	margin: 0;
+	overflow: hidden;
+}
+
+DIV.filemanager-container SPAN.fi:hover,DIV.filemanager-container SPAN.fi.hover
+	{
+	background: #E2EBF6;
+}
+
+DIV.filemanager-container SPAN.fi SPAN,DIV.filemanager-container SPAN.thumb
+	{
+	white-space: nowrap;
+	display: block;
+	overflow: hidden;
+}
+
+DIV.filemanager-container SPAN.thumb SPAN {
+	margin-top: 14px;
+}
+
+DIV.filemanager-container SPAN.thumb IMG.thumb {
+	width: 48px;
+	height: auto;
+}
+
+DIV.filemanager-container SPAN.drag SPAN,DIV.filemanager-engine-trident4 UL LI SPAN.fi SPAN,DIV.filemanager-engine-trident5 UL LI SPAN.fi SPAN,DIV.filemanager-engine-presto UL LI SPAN.fi SPAN,DIV.filemanager UL LI:hover SPAN.fi SPAN
+	{
+	overflow: hidden;
+}
+
+DIV.filemanager UL LI SPAN.dir {
+	background-color: transparent;
+}
+
+DIV.filemanager UL LI SPAN.droppable,DIV.filemanager-gallery UL.droppable
+	{
+	background-color: #99B7E7;
+}
+
+UL.filemanager-browser A,UL.filemanager-browser SPAN {
+	position: relative;
+}
+/*
+div.filemanager ul li a.selected, div.filemanager ul li span.selected {
+background: url("../Images/filelist_selected.png") repeat-x;
+color: #eee;
+outline: none;
+}
+*/
+DIV.filemanager UL LI SPAN.thumb.selected,DIV.filemanager UL LI SPAN.fi.selected
+	{
+	background: #8EAAD6;
+	color: #EEE;
+	outline: none;
+}
+
+DIV.filemanager-container SPAN.fi IMG {
+	float: left;
+	margin: 3px 3px 0 0;
+}
+
+DIV.filemanager-container SPAN.thumb IMG {
+	float: left;
+	margin: 0 5px 0 0;
+}
+
+DIV.filemanager-container SPAN.file IMG {
+	border: none;
+	margin-top: 5px;
+}
+
+DIV.filemanager-container SPAN.fi IMG.browser-icon {
+	float: right;
+	border: none;
+}
+
+DIV.filemanager-container SPAN.move IMG.browser-icon {
+	display: none;
+}
+
+DIV.filemanager SPAN.notice {
+	position: absolute;
+	bottom: 16px;
+	left: 16px;
+}
+
+DIV.filemanager A.filemanager-close {
+	z-index: 4;
+	display: block;
+	position: absolute;
+	right: 6px;
+	top: -23px;
+	height: 16px;
+	width: 16px;
+	background: url(../Images/close.png) no-repeat;
+	cursor: pointer;
+}
+
+DIV.filemanager A.filemanager-close:hover {
+	background-position: 0px -16px;
+}
+
+DIV.filemanager DIV.filemanager-close IMG {
+	padding: 2px;
+}
+
+DIV.filemanager-infos {
+	z-index: 0;
+	position: absolute;
+	left: 35%;
+	top: 0;
+	width: 63%;
+	height: 92%;
+	padding: 0px 1%;
+	line-height: 1.6em;
+	overflow: auto;
+}
+
+DIV.filemanager-head {
+	height: 32px;
+	overflow: hidden;
+}
+
+IMG.filemanager-icon {
+	float: left;
+	margin: 10px 12px;
+}
+
+DIV.filemanager H1 {
+	margin: 0;
+	padding: 0;
+	height: 32px;
+	line-height: 32px;
+	color: #333;
+	font-size: 20px;
+	letter-spacing: 1px;
+	overflow: hidden;
+	white-space: nowrap;
+	background-color: transparent;
+}
+
+DIV.filemanager H2 {
+	margin: 0;
+	border-top: 1px solid #BEBEBE;
+	font-size: 14px;
+	font-weight: bold;
+	padding: 2px 0 0 5px;
+	clear: both;
+}
+
+DIV.filemanager DL {
+	margin: 5px 0;
+	width: 100%;
+	clear: both;
+	overflow: auto;
+}
+
+DIV.filemanager DT,DIV.filemanager DD {
+	float: left;
+	line-height: 20px;
+	font-size: 11px;
+}
+
+DIV.filemanager DT {
+	clear: both;
+	width: 22%;
+	margin-left: 5%;
+	font-weight: bold;
+}
+
+DIV.filemanager DD {
+	width: 60%;
+	white-space: nowrap;
+	overflow: auto;
+}
+
+DIV.filemanager DIV.margin {
+	margin-left: 15px;
+}
+
+DIV.filemanager A.filemanager-dir-title {
+	padding-left: 10px;
+	padding-right: 10px;
+	font-weight: bold;
+	text-decoration: none;
+	color: #666;
+}
+
+DIV.filemanager A.filemanager-dir-title:hover {
+	color: #999;
+}
+
+DIV.filemanager INPUT.filemanager-dir {
+	margin-top: -5px;
+	background-color: #FBFBFB;
+	background-image: none !important;
+	border: 1px solid #CCC;
+	width: 70%;
+	padding: 2px 5px;
+	font-size: 15px;
+}
+
+DIV.filemanager SPAN.filemanager-dir A.icon {
+	border: 1px solid #BEBEBE;
+	padding: 2px 5px 2px 20px;
+	text-decoration: none;
+	background: #EEE url(../Images/Icons/dir.png) no-repeat 2px 0;
+	color: #000;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	/*-o-border-radius: 3px*/
+	border-radius: 3px;
+}
+/*not selectable path*/
+DIV.filemanager SPAN.filemanager-dir SPAN.icon {
+	border: none;
+	padding: 2px 5px 2px 20px;
+	background: url(../Images/Icons/dir.png) no-repeat 2px 0;
+	color: #999;
+}
+
+DIV.filemanager SPAN.filemanager-dir A.icon:hover {
+	text-decoration: none;
+	background-color: #FFF;
+}
+
+DIV.filemanager SPAN.filemanager-dir A.selected,DIV.filemanager SPAN.filemanager-dir A.selected:hover
+	{
+	margin: 0 1px;
+	background-color: transparent;
+	border: none;
+	cursor: auto;
+}
+
+DIV.filemanager-preview {
+	margin-top: 5px;
+}
+
+DIV.filemanager-preview IMG.preview {
+	margin: 0 auto 1em;
+	display: block;
+	background: transparent;
+	border: 1px solid #FFF;
+}
+
+DIV.filemanager-preview IMG.preview:hover {
+	border: 1px solid #666;
+}
+
+DIV.filemanager-preview UL LI IMG,DIV.filemanager-uploader UL LI IMG {
+	margin-top: 2px;
+	margin-right: 4px;
+	float: left;
+}
+
+DIV.filemanager-engine-trident4 DIV.filemanager-preview IMG.preview {
+	height: 100px;
+}
+
+DIV.filemanager-preview UL,DIV.filemanager-preview DIV.textpreview {
+	border: 1px solid #BEBEBE;
+	background: #FFF;
+	padding: 2px;
+	margin: 1em auto;
+	width: 490px;
+	height: 280px;
+	overflow: auto;
+}
+
+DIV.filemanager-preview DIV.textpreview PRE {
+	font: 10px Verdana, Arial, Helvetica, sans-serif;
+}
+
+DIV.filemanager-preview DIV.object {
+	width: 100%;
+	text-align: center;
+	overflow: hidden;
+}
+
+DIV.filemanager-container IMG.browser-add {
+	position: absolute;
+	width: 16px;
+	height: 16px;
+	z-index: 2000;
+}
+/*UPLOAD*/
+DIV.filemanager-container .file SPAN {
+	padding: 0 5px 0 0;
+}
+
+DIV.filemanager-container .file .file-size {
+	color: #666;
+}
+
+DIV.filemanager-container .file .file-cancel {
+	cursor: pointer;
+	padding-left: 5px;
+	float: right;
+}
+
+DIV.filemanager-container .file .file-progress {
+	margin-top: 5px;
+	float: right;
+	width: 125px;
+	height: 12px;
+	background-image: url(../Images/progress.gif);
+}
+
+DIV.filemanager DIV.checkbox {
+	float: left;
+	height: 12px;
+	width: 16px;
+	margin: 10px 3px 0;
+	background: url(../Images/checkbox.png) no-repeat;
+}
+
+DIV.filemanager DIV.checkboxChecked {
+	background-position: 0 -12px;
+}
+/*SELECTED FILE*/
+DIV.selected-file IMG {
+	vertical-align: bottom;
+	padding: 0 3px 0 0;
+}
+
+DIV.selected-file SPAN {
+	line-height: 16px;
+}
+
+DIV.selected-file .file-cancel {
+	cursor: pointer;
+	padding: 0 0 0 5px;
+}
+/*GALLERY*/
+DIV.filemanager BUTTON.filemanager-serialize {
+	font-weight: bold;
+}
+
+DIV.filemanager-gallery {
+	position: absolute;
+	z-index: 1000;
+	width: 750px;
+	height: 144px;
+	display: none;
+	font-family: Tahoma, sans-serif;
+	font-size: 12px;
+	border: 1px solid #BEBEBE;
+	border-top: 0;
+	background: #EEE;
+	/*border-radius-bottomleft: 5px*/
+	-moz-border-radius-bottomleft: 5px;
+	/*-webkit-border-radius-bottomleft: 5px
+-o-border-radius-bottomleft: 5px
+border-radius-bottomright: 5px*/
+	-moz-border-radius-bottomright: 5px;
+	/*-webkit-border-radius-bottomright: 5px
+-webkit-o-radius-bottomright: 5px
+box-shadow: rgba(0, 0, 0, 0.3) 0 0 40px
+-moz-box-shadow: rgba(0, 0, 0, 0.3) 0 0 40px
+-webkit-box-shadow: rgba(0, 0, 0, 0.3) 0 0 40px;
+-o-box-shadow: rgba(0, 0, 0, 0.3) 0 0 40px*/
+}
+
+DIV.filemanager-gallery DIV.howto {
+	position: absolute;
+	z-index: 1002;
+	left: 50px;
+	top: 60px;
+	color: #666;
+	font-size: 18px;
+	font-style: italic;
+}
+
+DIV.filemanager-gallery UL {
+	height: 121px;
+	margin: 7px 6px;
+	padding: 4px;
+	overflow: auto;
+	overflow-x: hidden;
+	border: 1px solid #BEBEBE;
+	background: #F2F2F2;
+}
+
+DIV.filemanager-gallery UL LI {
+	position: relative;
+	float: left;
+	margin: 0;
+	width: 79px;
+	height: 60px;
+	list-style: none;
+	background: url(../Images/loader.gif) no-repeat center center;
+}
+
+DIV.filemanager-gallery UL LI IMG {
+	padding: 2px;
+	width: 75px;
+	height: 56px;
+	cursor: pointer;
+}
+
+DIV.filemanager-gallery UL LI IMG.filemanager-remove {
+	position: absolute;
+	right: -7px;
+	top: -7px;
+	width: 16px;
+	height: 16px;
+}
+
+DIV.filemanager-wrapper {
+	position: absolute;
+	z-index: 1020;
+	width: 222px;
+	height: 250px;
+	font-family: Tahoma, sans-serif;
+	font-size: 12px;
+	border: 1px solid #BEBEBE;
+	background: #EEE;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	/*-o-border-radius: 5px*/
+}
+
+DIV.filemanager-wrapper DIV.img {
+	width: 210px;
+	height: 160px;
+	margin: 5px;
+	border: 1px solid #BEBEBE;
+	background: #FFF;
+}
+
+DIV.filemanager-wrapper SPAN {
+	display: block;
+	margin: 3px 8px 1px;
+	font-weight: bold;
+}
+
+DIV.filemanager-wrapper INPUT {
+	width: 210px;
+	margin: 3px 5px 0;
+	border: 1px solid #BEBEBE;
+	background: #FFF;
+}
+
+DIV.filemanager-wrapper BUTTON {
+	margin: 3px 7px;
+}
+
+IMG.filemanager-clone {
+	cursor: pointer;
+}
+/*TIPS*/
+.tip-filebrowser {
+	z-index: 1201;
+}
+
+.tip-filebrowser .tip {
+	background: #000 none;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	/*-o-border-radius: 5px*/
+	border-radius: 5px;
+	border: none;
+	padding: 10px;
+}
+
+.tip-filebrowser .tip-title {
+	color: #FFF;
+	font: normal 9px verdana, arial, Tahoma, sans-serif;
+	padding: 1px 4px;
+	line-height: 5px;
+	text-align: center;
+	font-weight: bold;
+	background: #000 none;
+	position: relative;
+	top: 5px;
+}
+
+.tip-filebrowser .tip-text {
+	display: none;
+}

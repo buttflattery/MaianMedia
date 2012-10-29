@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config>
+	<name>Dewplayer</name>
+	<creationDate>29 February 2012</creationDate>
+	<author>François Arbour and Gilles Arbour</author>
+	<authorUrl>http://www.alsacreations.fr/dewplayer-en.html</authorUrl>
+	<copyright>Are Times</copyright>
+	<license>GNU/GPL</license>
+	<version>1.0.0</version>
+	<description>Dewplayer is under Creative Commons licence.
+		The usage is totally free even for commercial purposes (but not reselling
+		it).</description>
+	<params>
+		<param name="skin" type="list" default="dewplayer" label="Skin"
+			description="Skin Type">
+			<option value="dewplayer">Standard</option>
+			<option value="dewplayer-vol">With Volume</option>
+			<option value="dewplayer-mini">Mini</option>
+		</param>
+		<param name="width" type="text" default="200" label="Width" />
+		<param name="height" type="text" default="20" label="Height" />
+		<param name="style" type="textarea" default="a:active, a:focus {outline: 0};"
+			label="Style" />
+	</params>
+</config>

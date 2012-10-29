@@ -1,0 +1,27 @@
+<script type="text/javascript">
+			jQuery.noConflict();
+
+			jQuery(document).ready(function($) {
+  				$('audio,video').mediaelementplayer({
+  				// shows debug errors on screen
+  				    enablePluginDebug: false,
+  				// if the <video width> is not specified, this is the default
+  				    defaultVideoWidth: 480,
+  				    // if the <video height> is not specified, this is the default
+  				    defaultVideoHeight: 270,
+  				    // if set, overrides <video width>
+  				    videoWidth: -1,
+  				    // if set, overrides <video height>
+  				    videoHeight: -1,
+  				    // width of audio player
+  				    audioWidth: {width},
+  				    // height of audio player
+  				    audioHeight: {height},
+  				    // initial volume when the player starts
+  				    startVolume: {startVolume},
+  				    // useful for <audio> player loops
+  				    loop: false
+  				});
+			});
+			
+</script>

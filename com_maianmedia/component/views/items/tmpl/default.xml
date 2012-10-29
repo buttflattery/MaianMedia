@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+	<layout title="Physical Items">
+		<message>
+			<![CDATA[Displays physical items to go along with your music store]]>
+		</message>
+	</layout>
+	<fields name="params">
+		<fieldset name="component" label="Settings">
+			<field name="show_track" type="radio" default="1"
+				label="Most popular tracks" description="Shows most popular tracks from the music store">
+				<option value="0">No</option>
+				<option value="1">Yes</option>
+			</field>
+			<field name="display_track" type="list" default="5"
+				label="Popular Track Links" description="Number of tracks to display as a list.">
+				<option value="5">5</option>
+				<option value="10">10</option>
+				<option value="15">15</option>
+				<option value="20">20</option>
+			</field>
+			<field name="show_items" type="radio" default="1"
+				label="Most popular items" description="Shows most popular items from the music store">
+				<option value="0">No</option>
+				<option value="1">Yes</option>
+			</field>
+			<field name="display_items" type="list" default="5"
+				label="Popular item Links" description="Number of items to display as a list.">
+				<option value="5">5</option>
+				<option value="10">10</option>
+				<option value="15">15</option>
+				<option value="20">20</option>
+			</field>
+			<field name="show_latest_track" type="radio" default="1"
+				label="Recently added tracks" description="Shows most popular tracks from the music store">
+				<option value="0">No</option>
+				<option value="1">Yes</option>
+			</field>
+			<field name="display_latest_track" type="list" default="5"
+				label="Recently Added Track Links" description="Number of tracks to display as a list.">
+				<option value="5">5</option>
+				<option value="10">10</option>
+				<option value="15">15</option>
+				<option value="20">20</option>
+			</field>
+			<field name="show_latest_items" type="radio" default="1"
+				label="Recently added items" description="Shows most popular items from the music store">
+				<option value="0">No</option>
+				<option value="1">Yes</option>
+			</field>
+			<field name="display_latest_items" type="list" default="5"
+				label="Recently Added Item Links" description="Number of items to display as a list.">
+				<option value="5">5</option>
+				<option value="10">10</option>
+				<option value="15">15</option>
+				<option value="20">20</option>
+			</field>
+		</fieldset>
+	</fields>
+</metadata>

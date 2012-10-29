@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- $Id: default.xml 10880 2008-08-31 17:51:53Z willebil $ -->
+<metadata>
+	<layout title="Most Popular">
+		<message>
+			<![CDATA[Displays the most popular songs in your music store]]>
+		</message>
+	</layout>
+	<fields name="params">
+		<fieldset name="component" label="Settings">
+			<field name="show_track" type="radio" default="1"
+				label="Most popular tracks" description="Shows most popular tracks from the music store">
+				<option value="0">No</option>
+				<option value="1">Yes</option>
+			</field>
+			<field name="display_track" type="list" default="5"
+				label="Popular Track Links" description="Number of tracks to display as a list.">
+				<option value="5">5</option>
+				<option value="10">10</option>
+				<option value="15">15</option>
+				<option value="20">20</option>
+			</field>
+			<field name="show_albums" type="radio" default="1"
+				label="Most popular albums" description="Shows most popular albums from the music store">
+				<option value="0">No</option>
+				<option value="1">Yes</option>
+			</field>
+			<field name="display_albums" type="list" default="5"
+				label="Popular Album Links" description="Number of albums to display as a list.">
+				<option value="5">5</option>
+				<option value="10">10</option>
+				<option value="15">15</option>
+				<option value="20">20</option>
+			</field>
+			<field name="show_latest_track" type="radio" default="1"
+				label="Recently added tracks" description="Shows most popular tracks from the music store">
+				<option value="0">No</option>
+				<option value="1">Yes</option>
+			</field>
+			<field name="display_latest_track" type="list" default="5"
+				label="Recently Added Track Links" description="Number of tracks to display as a list.">
+				<option value="5">5</option>
+				<option value="10">10</option>
+				<option value="15">15</option>
+				<option value="20">20</option>
+			</field>
+			<field name="show_latest_albums" type="radio" default="1"
+				label="Recently added albums" description="Shows most popular albums from the music store">
+				<option value="0">No</option>
+				<option value="1">Yes</option>
+			</field>
+			<field name="display_latest_albums" type="list" default="5"
+				label="Recently Added Album Links" description="Number of albums to display as a list.">
+				<option value="5">5</option>
+				<option value="10">10</option>
+				<option value="15">15</option>
+				<option value="20">20</option>
+			</field>
+		</fieldset>
+	</fields>
+</metadata>
